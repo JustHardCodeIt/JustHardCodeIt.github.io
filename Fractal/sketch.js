@@ -4,16 +4,12 @@ var slider;
 var level;
 var currentStoke;
 
-var button;
 
 
 function setup() {
   createCanvas(400, 400);
   slider = createSlider(0, TWO_PI, PI/4, 0.01);
-  button = createButton('Random');
-  button.mousePressed() = function stuff(){
-  	rotate = randomRotation();
-  }
+
 }
 
 function draw() {
@@ -43,6 +39,3 @@ function branch(len){
 }
 
 
-function randomRotation(min, max){
-	return Math.floor(Math.random() * (max - min) + min);
-}
