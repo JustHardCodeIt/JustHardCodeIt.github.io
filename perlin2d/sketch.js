@@ -21,7 +21,7 @@ var aSlider;
 
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(800, 800);
 	background(255);
 
 	cols = floor(width / scl);
