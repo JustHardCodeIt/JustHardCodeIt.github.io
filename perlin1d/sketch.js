@@ -22,7 +22,7 @@ for(var x = 0; x < width; x++){
   
  var y = noise(xOffset) * height;
 	
-stroke(map(noise(xOffset), 0, 1, 1, 255), 0, 0);
+stroke(map(noise(xOffset), 0, 1, 1, 255) * 2, 0, 0);
  vertex(x, y);
 
  xOffset += inc;
