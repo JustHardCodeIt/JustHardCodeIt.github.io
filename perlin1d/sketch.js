@@ -19,8 +19,10 @@ function draw() {
 beginShape();
 var xOffset = start;
 for(var x = 0; x < width; x++){
-  stroke(255);
+  
  var y = noise(xOffset) * height;
+stroke(255);	
+strokeWeight(map(noise(xOffset), 0, 1, 1, 255) * 2);
  vertex(x, y);
 
  xOffset += inc;
